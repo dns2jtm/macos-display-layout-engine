@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "macos-display-layout-engine"
+version = "1.0.0"
+description = "High-performance macOS window management daemon and automated multi-display tiling engine using native Quartz and AppKit APIs"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "Daniel Sawa", email = "dns2jtm@gmail.com" }
+]
+keywords = ["macos", "quartz", "coregraphics", "window-manager", "tiling", "cocoa", "display"]
+classifiers = [
+    "Operating System :: MacOS :: MacOS X",
+    "Programming Language :: Python :: 3",
+    "Topic :: Desktop Environment :: Window Managers",
+]
+
+[project.scripts]
+layout-engine = "layout_engine.cli:main"
